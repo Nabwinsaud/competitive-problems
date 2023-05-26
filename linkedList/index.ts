@@ -37,6 +37,16 @@ class LinkedList<T> {
       currentNode = currentNode.next;
     }
   }
+
+  remove(value: T) {
+    if (this.head === null) {
+      console.log("List is empty nothing to remove");
+      return; // list is empty not nothing to remove
+    }
+    if (this.head.value === value) {
+      this.head = this.head.next;
+    }
+  }
 }
 
 const linkedList = new LinkedList<number>();
