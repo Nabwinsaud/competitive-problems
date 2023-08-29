@@ -34,8 +34,9 @@ class BinarySearchTree {
         if (value < current.value) {
           if (current.left === null) {
             current.left = newNode;
-            return; // exit the loop inserting
+            return; // exit from the loop
           }
+          current = current.left;
         } else {
           if (current.right === null) {
             current.right = newNode;
@@ -61,4 +62,17 @@ bst.insert(8);
 bst.insert(3);
 bst.insert(10);
 bst.insert(14);
+bst.insert(1);
+bst.insert(6);
 console.log("isEmpty ", bst.isEmpty(), bst);
+
+/**
+ * 
+ * isEmpty  false BinarySearchTree {
+  root: Tree {
+    value: 8,
+    left: Tree { value: 3, left: null, right: null },
+    right: Tree { value: 10, left: null, right: [Tree] }
+  }
+}
+ */
