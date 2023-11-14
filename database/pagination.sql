@@ -17,7 +17,7 @@ SELECT * FROM user ORDER BY first_name;
 SELECT
     first_name,
     COUNT(*) as count
-FROM user
+FROM `user`
 WHERE first_name LIKE "%Av%"
 GROUP BY first_name
 ORDER BY first_name

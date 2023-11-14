@@ -160,3 +160,31 @@ VALUES (
         '555-7890',
         '765 Elm St'
     );
+
+--  update user `User`
+
+UPDATE user set first_name="Nabin" WHERE id=1;
+
+SELECT first_name FROM user WHERE id=1;
+
+SELECT
+    email,
+    CONCAT(first_name, "", last_name) AS Name
+from user
+WHERE
+    id IN (1, 2, 3, 5, 6, 9, 8);
+
+SELECT
+    email,
+    CONCAT(first_name, "", last_name) AS Name
+FROM user
+WHERE id > 10;
+
+SELECT *
+FROM `user`
+WHERE id BETWEEN 1 AND 5
+ORDER BY id DESC
+LIMIT 3
+OFFSET 1;
+
+DROP TABLE IF EXISTS random;

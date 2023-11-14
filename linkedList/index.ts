@@ -7,7 +7,7 @@ class LinkedNode<T> {
   }
 }
 
-class LinkedList<T> {
+class LinkedList1<T> {
   head: LinkedNode<T> | null;
   tail: LinkedNode<T> | null;
   constructor() {
@@ -49,7 +49,7 @@ class LinkedList<T> {
   }
 }
 
-const linkedList = new LinkedList<number>();
+const linkedList = new LinkedList1<number>();
 linkedList.append(10);
 linkedList.append(20);
 linkedList.append(30);
