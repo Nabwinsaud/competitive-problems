@@ -1,6 +1,5 @@
 # LeetCode Problem-Solving Journey
 
-## Date: 2023-05-16
 
 ## Description
 In this repository, I document my journey of solving LeetCode problems. LeetCode is a platform that offers a wide range of coding challenges to improve algorithmic problem-solving skills. By solving these problems, I aim to enhance my knowledge of data structures, algorithms, and problem-solving techniques.
