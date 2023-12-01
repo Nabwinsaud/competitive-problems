@@ -229,8 +229,14 @@ l.append(40);
 // l.deleteAtLast();
 // l1.deleteAtLast();
 
-l1.deleteAt(2);
+// l1.deleteAt(2);
 // l1.deleteAt(1);
 
 console.log("linked visual way", l.display());
 console.log("linked linked", l1.display(), l1.size);
+
+function deleteNode<T>(node: ListNode<T> | null) {}
+
+const t = deleteNode<string>(l1.head);
+
+console.log("t is", t);
