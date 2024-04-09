@@ -21,3 +21,4 @@ console.log(palindrome("madam"));
 // a!==[5-1-1] a!==a
 // d!==[5-1-2] d!==d
 // ma
+// awdnsnsn
